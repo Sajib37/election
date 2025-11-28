@@ -1,5 +1,5 @@
 // utils/voteCounter.ts
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export type Vote = {
   voterId: number;
@@ -22,7 +22,7 @@ export type VoteCounts = Record<string, Record<string, number>>;
 export async function getVoteCounts(): Promise<VoteCounts> {
   try {
     // --- 1. Fetch all votes from the API ---
-    const res = await fetch(`${baseUrl}/api/votes/all`, { cache: "no-store" });
+    const res = await fetch(`/api/votes/all`, { cache: "no-store" });
     if (!res.ok) {
       throw new Error(`Failed to fetch votes: ${res.status} ${res.statusText}`);
     }

@@ -1,5 +1,5 @@
+"use client";
 import VoteCard from "@/components/VoteCard";
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 export interface IVoteRecord {
   voterId: number;
@@ -18,7 +18,7 @@ export interface IVoteRecord {
 const page = async () => {
   // Fetch all votes
   const allVotes = await fetch(
-    `${baseUrl}/api/votes/all`,
+    `/api/votes/all`,
     {
       cache: "no-store",
     }
