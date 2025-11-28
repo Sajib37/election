@@ -83,10 +83,10 @@ export default function Home() {
       <div>
         <Comissioner/>
       </div>
-      <section className="mt-18 flex flex-col lg:flex-row gap-10">
+      {/* <section className="mt-18 flex flex-col lg:flex-row gap-10">
         <Voted />
         <NotVoted />
-      </section>
+      </section> */}
     </section>
   );
 }
