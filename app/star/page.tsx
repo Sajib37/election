@@ -1,4 +1,6 @@
 "use client";
+
+import { useEffect, useState } from "react";
 import VoteCard from "@/components/VoteCard";
 
 export interface IVoteRecord {
@@ -15,28 +17,48 @@ export interface IVoteRecord {
   publicitySecretary: string;
 }
 
-const page = async () => {
-  // Fetch all votes
-  const allVotes = await fetch(
-    `/api/votes/all`,
-    {
-      cache: "no-store",
-    }
-  ).then((res) => res.json());
-  const sortedVotes = allVotes.sort(
-    (a: IVoteRecord, b: IVoteRecord) =>
-      new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
-  );
+const Page = () => {
+  const [votes, setVotes] = useState<IVoteRecord[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadVotes = async () => {
+      const res = await fetch(`/api/votes/all`, {
+        cache: "no-store",
+      });
+      const data = await res.json();
+
+      // Sort by latest timestamp
+      const sorted = data.sort(
+        (a: IVoteRecord, b: IVoteRecord) =>
+          new Date(b.timestamp).getTime() -
+          new Date(a.timestamp).getTime()
+      );
+
+      setVotes(sorted);
+      setLoading(false);
+    };
+
+    loadVotes();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-2xl">
+        Loading Votes...
+      </div>
+    );
+  }
 
   return (
     <section className="bg-pink-300/10 min-h-screen">
-      <div className="max-w-7xl mx-auto p-2 ">
+      <div className="max-w-7xl mx-auto p-2">
         <h1 className="text-4xl text-center font-bold mt-10">
-          All vote Information
+          All Vote Information
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {sortedVotes.map((vote: IVoteRecord, index: number) => (
+          {votes.map((vote, index) => (
             <VoteCard key={index} vote={vote} />
           ))}
         </div>
@@ -45,4 +67,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;
