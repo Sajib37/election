@@ -114,7 +114,7 @@ export default function VotingForm() {
           <div>
             <label className="block font-semibold mb-2">Voter ID *</label>
             <input
-              type="text"
+              type="number"
               name="voterId"
               value={form.voterId}
               onChange={handleChange}

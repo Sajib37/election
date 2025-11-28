@@ -66,17 +66,17 @@ const Voted = () => {
         <ul className="space-y-3">
           {votedVoters.map((voter) => (
             <li
-              key={voter["Voter Id"]}
+              key={voter.voterId}
               className="p-3 border rounded flex justify-between items-center bg-green-50"
             >
               <div>
-                <span className="font-semibold text-lg">{voter.Name}</span>
+                <span className="font-semibold text-lg">{voter.name}</span>
                 <span className="ml-4 text-sm text-gray-600">
-                  (ID: **{voter["Voter Id"]}**)
+                  ID: {voter.voterId}
                 </span>
               </div>
               <span className="text-sm font-medium text-green-700">
-                Department: {voter.Department}
+                Department: {voter.department}
               </span>
             </li>
           ))}

@@ -1,6 +1,5 @@
-"use client"
-
 import VoteCard from "@/components/VoteCard";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 export interface IVoteRecord {
   voterId: number;
@@ -18,9 +17,12 @@ export interface IVoteRecord {
 
 const page = async () => {
   // Fetch all votes
-  const allVotes = await fetch(`/api/votes/all`, {
-    cache: "no-store",
-  }).then((res) => res.json());
+  const allVotes = await fetch(
+    `${baseUrl}/api/votes/all`,
+    {
+      cache: "no-store",
+    }
+  ).then((res) => res.json());
   const sortedVotes = allVotes.sort(
     (a: IVoteRecord, b: IVoteRecord) =>
       new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
@@ -29,7 +31,9 @@ const page = async () => {
   return (
     <section className="bg-pink-300/10 min-h-screen">
       <div className="max-w-7xl mx-auto p-2 ">
-        <h1 className="text-4xl text-center font-bold mt-10">All vote Information</h1>
+        <h1 className="text-4xl text-center font-bold mt-10">
+          All vote Information
+        </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {sortedVotes.map((vote: IVoteRecord, index: number) => (

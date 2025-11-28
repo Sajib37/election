@@ -1,0 +1,28 @@
+[
+  {
+    "voterId": "251601",
+    "studentIdCardUrl": "https://res.cloudinary.com/dzvvj8sld/image/upload/v1764323264/voter_ids/umo72xhangcofxngpdyw.jpg",
+    "name": "রুমা",
+    "department": "social work",
+    "timestamp": "2025-11-28T09:47:44.219Z",
+    "president": "MD Sajib Hossen",
+    "generalSecretary": "SP Prodip",
+    "organizationalSecretary": "Kamran Siddiky Imrose",
+    "officeSecretary": "Sadika Islam Disha",
+    "financeSecretary": "Antor Haldar",
+    "publicitySecretary": "Monayem Kabir Shihab"
+  },
+  {
+    "voterId": "251602",
+    "studentIdCardUrl": "https://res.cloudinary.com/dzvvj8sld/image/upload/v1764336755/voter_ids/whfzeyrqiodzbxmkt2y6.jpg",
+    "name": "রিয়াদ",
+    "department": "social work",
+    "timestamp": "2025-11-28T13:32:36.039Z",
+    "president": "MD Hasanuzzaman",
+    "generalSecretary": "MD Torikul Islam",
+    "organizationalSecretary": "MD Reduan Islam",
+    "officeSecretary": "Ismail Hossain",
+    "financeSecretary": "Shabbir Ahmed Sweet",
+    "publicitySecretary": "Monayem Kabir Shihab"
+  }
+]

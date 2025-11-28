@@ -1,29 +1,22 @@
+import { NextResponse } from "next/server";
+import Vote from "../../../../models/vote";
+import connectMongoDB from "../../../../libs/mongodb";
 
-
-import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-// Define the path to your votes file
-const votesPath = path.join(process.cwd(), 'db', 'votes.json');
 
 export async function GET() {
   try {
-    // Read the entire votes.json file
-    const votesFile = fs.readFileSync(votesPath, 'utf8');
-    const allVotes = JSON.parse(votesFile);
+    // Connect to MongoDB
+    await connectMongoDB();
 
-    // Return the entire array of vote records
-    return NextResponse.json(allVotes, { status: 200 });
+    // Fetch all votes, sorted by timestamp descending
+    const votes = await Vote.find().sort({ createdAt: -1 }).lean();
 
+    return NextResponse.json(votes, { status: 200 });
   } catch (error) {
-    console.error('API Error fetching all votes:', error);
-    
-    // Handle the case where the file might not exist or parsing fails
-    if (error.code === 'ENOENT') {
-      return NextResponse.json({ message: 'Votes file not found. Check the db/votes.json path.' }, { status: 404 });
-    }
-    
-    return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 });
+    console.error("Error fetching votes:", error);
+    return NextResponse.json(
+      { message: "Internal Server Error" },
+      { status: 500 }
+    );
   }
 }

@@ -1,31 +1,18 @@
-// app/api/voters/not-voted/route.js
-
-import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-// Define the path to your voter list file
-const voterListPath = path.join(process.cwd(), 'db', 'voterlist.json');
-
+import { NextResponse } from "next/server";
+import Voter from "../../../../models/voters";
+import connectMongoDB from "../../../../libs/mongodb";
 export async function GET() {
   try {
-    // Read the voter list data
-    const voterListFile = fs.readFileSync(voterListPath, 'utf8');
-    const voterList = JSON.parse(voterListFile);
+    await connectMongoDB();
 
-    // Filter the list to include only those who have NOT voted
-    const notVotedList = voterList.filter(voter => voter.Voted === 'No');
+    const notVoted = await Voter.find({ voted: "No" }).lean();
 
-    // Return the list of eligible voters who have not yet cast a vote
-    return NextResponse.json(notVotedList, { status: 200 });
-
+    return NextResponse.json(notVoted, { status: 200 });
   } catch (error) {
-    console.error('API Error fetching not voted list:', error);
-    
-    if (error.code === 'ENOENT') {
-      return NextResponse.json({ message: 'Voter list file not found.' }, { status: 404 });
-    }
-    
-    return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 });
+    console.error("Error fetching not-voted voters:", error);
+    return NextResponse.json(
+      { message: "Internal Server Error" },
+      { status: 500 }
+    );
   }
 }
