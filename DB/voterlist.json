@@ -1,0 +1,794 @@
+[
+  {
+    "Voter Id": 251601,
+    "Name": "রুমা",
+    "Department": "social work",
+    "Voted": "Yes"
+  },
+  {
+    "Voter Id": 251602,
+    "Name": "রিয়াদ",
+    "Department": "social work",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251603,
+    "Name": "মামুন",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251604,
+    "Name": "নিলয়",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251605,
+    "Name": "লিখন",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251606,
+    "Name": "সাথী",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251607,
+    "Name": "পান্না",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251608,
+    "Name": "সাৌম্য",
+    "Department": "IML",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251609,
+    "Name": "সাহেদ",
+    "Department": "AIS",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251610,
+    "Name": "সূচনা",
+    "Department": "Management",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251611,
+    "Name": "জোবাইদা",
+    "Department": "Islamic studies",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251612,
+    "Name": "হাসানুজ্জামান",
+    "Department": "Political Science",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251613,
+    "Name": "নিলয় হাসান",
+    "Department": "MCJ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251614,
+    "Name": "তুষার",
+    "Department": "Psychology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251615,
+    "Name": "জিন্নাত",
+    "Department": "MCJ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251616,
+    "Name": "তাপস",
+    "Department": "MCJ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251617,
+    "Name": "মনিকা",
+    "Department": "Social Work",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251618,
+    "Name": "মাহবুব",
+    "Department": "Social Work",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251619,
+    "Name": "সাজিব হোসেন",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251620,
+    "Name": "জেরিন",
+    "Department": "ML",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251621,
+    "Name": "Tashjir Akter",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251622,
+    "Name": "Eisrat Jahan ",
+    "Department": "IML",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251623,
+    "Name": "MD.Hasan Islam",
+    "Department": "MCJ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251624,
+    "Name": "Nisrat Jahan liza",
+    "Department": "Sociology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251625,
+    "Name": "Torikul",
+    "Department": "IER",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251626,
+    "Name": "Rony Islam",
+    "Department": "Political Science",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251627,
+    "Name": "Priya Mondol",
+    "Department": "Political Science",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251628,
+    "Name": "মোঃ আরাফাত হোসেন",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251701,
+    "Name": "মোঃ তরিকুল ইসলাম",
+    "Department": "Finance",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251702,
+    "Name": "আরিফুল ইসলাম",
+    "Department": "Economics",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251703,
+    "Name": "আব্দুল্লাহ",
+    "Department": "Social Work",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251704,
+    "Name": "আহমেদ কিয়াম",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251705,
+    "Name": "হাসিনা",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251706,
+    "Name": "মাইশা মেঘা",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251707,
+    "Name": "আশিক আলী",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251708,
+    "Name": "লালচাদ বাদশাহ",
+    "Department": "Film And Television",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251709,
+    "Name": "রিদয়",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251710,
+    "Name": "ওয়াশিকুল গণি",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251711,
+    "Name": "নিয়াজ",
+    "Department": "Marketing",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251712,
+    "Name": "বর্ষা",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251713,
+    "Name": "শাপলা সেতু",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251714,
+    "Name": "নাজিয়া",
+    "Department": "Economics",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251715,
+    "Name": "নাজমুল",
+    "Department": "Accounting",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251716,
+    "Name": "নূর জাহান",
+    "Department": "Economics",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251717,
+    "Name": "ওভিজিত",
+    "Department": "Math",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251718,
+    "Name": "সালমান",
+    "Department": "Land Law",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251719,
+    "Name": "শিলন",
+    "Department": "Social Work",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251720,
+    "Name": "প্রদীপ",
+    "Department": "Statistics",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251721,
+    "Name": "সুজন",
+    "Department": "Social Work",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251722,
+    "Name": "সুমাইয়া",
+    "Department": "Psychology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251723,
+    "Name": "তনিমা",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251724,
+    "Name": "আকসা",
+    "Department": "History",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251725,
+    "Name": "লুবনা খাতুন ",
+    "Department": "Marketing",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251726,
+    "Name": "মাহফুজুর রহমান মাহফুজ",
+    "Department": "Accounting",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251801,
+    "Name": "তৌফিক তানিম তন্ময়",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251802,
+    "Name": "রকিবুল ইসলাম",
+    "Department": "Political Science",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251803,
+    "Name": "আফসানা সুলতানা মুন",
+    "Department": "Law",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251804,
+    "Name": "রিদওয়ান ইসলাম",
+    "Department": "Political Science",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251805,
+    "Name": "ফারিহা খাতুন",
+    "Department": "English",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251806,
+    "Name": "শিরিন আক্তার",
+    "Department": "Islamic studies",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251807,
+    "Name": "রাজিয়া খাতুন",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251808,
+    "Name": "আল আমিন",
+    "Department": "English",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251809,
+    "Name": "সোহানা খাতুন",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251810,
+    "Name": "তাসরিফ আহমেদ",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251811,
+    "Name": "মাহফুজা খাতুন",
+    "Department": "Law",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251812,
+    "Name": "নাজিব মাহমুদ অনিক",
+    "Department": "Sociology",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251813,
+    "Name": "জেনিফা আক্তার জ্যোতি",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251814,
+    "Name": "সুমাইয়া আক্তার মীম",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251815,
+    "Name": "রাহুল ইসলাম",
+    "Department": "Accounting",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251816,
+    "Name": "সাব্বির আহমেদ সুইট",
+    "Department": "Islamic studies",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251817,
+    "Name": "আব্দুল্লাহ আল তামিম",
+    "Department": "Finance",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251818,
+    "Name": "সাবিহা সুলতানা সুইটি",
+    "Department": "Law",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251819,
+    "Name": "শাফায়েত",
+    "Department": "Mangaement",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251820,
+    "Name": "রোকেয়া",
+    "Department": "English",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251821,
+    "Name": "আমানতুল্লাহ",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251822,
+    "Name": "সাদিয়া তাবাসসুম",
+    "Department": "IHC",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251823,
+    "Name": "আনোয়ার হোসেন",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251824,
+    "Name": "ফারজানা আকতার বর্ষা",
+    "Department": "Math",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251825,
+    "Name": "নাহিদা আকতার প্রিতি",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251826,
+    "Name": "ওসমান গণি",
+    "Department": "History",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251827,
+    "Name": "বৃষ্টি খাতুন",
+    "Department": "Mangaement",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251828,
+    "Name": "জেবা সামিহা জুই",
+    "Department": "Management",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251829,
+    "Name": "সাদিকা ইসলাম দিশা",
+    "Department": "Film and Television",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251830,
+    "Name": "ফারজাানা রহমান লিজা",
+    "Department": "MCJ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251831,
+    "Name": "সাবরিনা",
+    "Department": "MCJ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251901,
+    "Name": "Imrul Kayes Anik ",
+    "Department": "Sociology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251902,
+    "Name": "Md. Nishat Ali Nishat",
+    "Department": "Economics",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251903,
+    "Name": "Mst.Moriom khatun ",
+    "Department": "Political science  ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251904,
+    "Name": "Md. Munna Mia ",
+    "Department": "Economics ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251905,
+    "Name": "মোঃ ইসমাইল হোসেন ",
+    "Department": "Political science  ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251906,
+    "Name": "Sadia Sultana Disha",
+    "Department": "Management  studies ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251907,
+    "Name": "Arafat Mahmud ",
+    "Department": "Political science  ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251908,
+    "Name": "মোছা : অঞ্জনা খাতুন",
+    "Department": "Bangla",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251909,
+    "Name": "Md.Yasir Arafat",
+    "Department": " Islamic History And Culture ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251910,
+    "Name": "Sunjida Tasnim ",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251911,
+    "Name": "Nahid Hasan",
+    "Department": "Islamic History and Culture ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251912,
+    "Name": "Md monaem kobir Shihab ",
+    "Department": "Islamic history and culture ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251913,
+    "Name": "MD. KAMRAN SIDDIKY IMROSE ",
+    "Department": "Law",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251914,
+    "Name": "ANTOR HALDER",
+    "Department": "Anthropology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251915,
+    "Name": "Durri Maktum ",
+    "Department": "History ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251916,
+    "Name": "Md Imran Hossen Rubel ",
+    "Department": "Zoology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251917,
+    "Name": "Md.Ripon Ali",
+    "Department": "Anthropology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251918,
+    "Name": "Sree.jumur bala",
+    "Department": "Philosophy ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251919,
+    "Name": "Md.Ekramul Haque ",
+    "Department": "Management studies ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251920,
+    "Name": "Nowshin Rumali (Tisha)",
+    "Department": "Islamic history and Culture ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251921,
+    "Name": "Mst Umma Kulsum",
+    "Department": "Social work ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251922,
+    "Name": "Fariha Khatun",
+    "Department": "Social work ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251923,
+    "Name": "Sabrina Tithi",
+    "Department": "History ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251924,
+    "Name": "Rita Rani",
+    "Department": "Political science  ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251925,
+    "Name": "Shunjida Tasnim Anika",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251926,
+    "Name": "Jahid Hasan",
+    "Department": "English",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251927,
+    "Name": "Tanjila Tabassum Meghla",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 251928,
+    "Name": "Sabbir Hasan",
+    "Department": "Islamic Studies",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252001,
+    "Name": "Mst.Jarin Tasnim",
+    "Department": "LLA",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252002,
+    "Name": "Mst.suraiya shimu",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252003,
+    "Name": "Mst.khadija tul kobra",
+    "Department": "Physics ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252004,
+    "Name": "Mst. Bonna Khatun",
+    "Department": "Department of English",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252005,
+    "Name": "Md Israfil Hossain ",
+    "Department": "LLA",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252006,
+    "Name": "মোঃ রিদয় ইসলাম ",
+    "Department": "History",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252007,
+    "Name": "MD.JAHANGIR ALAM",
+    "Department": "Law",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252008,
+    "Name": "Mst Marija Sultana ",
+    "Department": "Statistics ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252009,
+    "Name": "Amina khatun Akhi ",
+    "Department": "Anthropology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252010,
+    "Name": "Mst.Sadia khatun ",
+    "Department": "Anthropology ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252011,
+    "Name": "Istia Irin",
+    "Department": "Statistics ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252012,
+    "Name": "Atiqur Rahman",
+    "Department": "Film And Television",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252013,
+    "Name": "Arfina Aktar Mitu",
+    "Department": "Land and Law Ad.",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252014,
+    "Name": "Mst Yasmin Akter",
+    "Department": "Chemistry",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252015,
+    "Name": "MD Kamrul Islam Apu",
+    "Department": "IER",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252016,
+    "Name": "মারজিয়া সুলতানা জ্যোতি",
+    "Department": "Statistics ",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252017,
+    "Name": "Jarin Tasnim Jui",
+    "Department": "Botany",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252018,
+    "Name": "সিয়াত উল্লাহ",
+    "Department": "BioChemistry",
+    "Voted": "No"
+  },
+  {
+    "Voter Id": 252019,
+    "Name": "সুলতান উল আরিফিন ",
+    "Department": "Political Science",
+    "Voted": "No"
+  }
+]

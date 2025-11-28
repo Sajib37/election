@@ -1,65 +1,53 @@
-import Image from "next/image";
+import Link from "next/link";
+import NotVoted from "@/components/NotVoted";
+import Voted from "@/components/Voted";
+import { getVoteCounts } from "@/utils/CountVote";
+export default async function Home() {
+  const voteCounts = await getVoteCounts();
 
-export default function Home() {
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <section className="max-w-7xl mx-auto p-2">
+      <div className="bg-[#d96c06] p-4">
+        <h1 className="text-center text-3xl font-bold text-white">Election 2025</h1>
+      </div>
+
+      <div className="my-12 p-2 bg-green-500 font-bold mx-auto text-white w-42 text-center rounded-full">
+        <Link href="/vote">Give Your Vote</Link>
+      </div>
+
+      <div className="my-8 bg-blue-600 text-white mx-auto w-44 p-2 rounded-full text-center font-bold">
+        <Link href="/login">Comissioner Login</Link>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-2">
+        
+        {Object.entries(voteCounts).map(([position, candidates]) => (
+          <div className="bg-indigo-300 p-3 rounded-md" key={position}>
+            <h2 className="text-2xl font-bold text-center mb-2">
+              {
+                position
+                  .replace(/([A-Z])/g, " $1") 
+                  .trim() 
+                  .replace(/\b\w/g, (char) => char.toUpperCase()) 
+              }
+            </h2>
+
+            <ul className="rounded-md flex flex-col gap-2">
+              {Object.entries(candidates).map(([candidate, count]) => (
+                <li className="bg-yellow-200 p-2 rounded-md text-lg font-semibold" key={candidate}>
+                  {candidate}: <span className="text-base font-bold">{count} votes</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <section>
+        <Voted />
+        <NotVoted />
+      </section>
+    </section>
   );
 }
