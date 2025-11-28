@@ -50,9 +50,9 @@ const NotVoted = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">
-        🔔 Eligible Voters Yet to Vote ({notVotedVoters.length})
+    <div className="max-w-4xl mx-auto p-6 bg-white/40 shadow-xl rounded-lg w-full">
+      <h2 className="text-2xl font-bold mb-4 text-center">
+        🔔 Yet to Vote ({notVotedVoters.length})
       </h2>
 
       {notVotedVoters.length === 0 ? (
@@ -64,16 +64,17 @@ const NotVoted = () => {
           {notVotedVoters.map((voter) => (
             <li
               key={voter.voterId}
-              className="p-3 border rounded flex justify-between items-center bg-yellow-50"
+              className="p-3 border rounded flex justify-between items-center bg-purple-500/10 gap-4"
             >
-              <div>
+              <div className="flex flex-col">
                 <span className="font-semibold text-lg">{voter.name}</span>
-                <span className="ml-4 text-sm text-gray-600">
-                  ID: {voter.voterId}
+                <span className=" text-sm text-gray-600">
+                  
+                  Dept: {voter.department}
                 </span>
               </div>
               <span className="text-sm font-medium text-yellow-700">
-                Dept: {voter.department}
+                ID: {voter.voterId}
               </span>
             </li>
           ))}

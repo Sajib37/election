@@ -3,7 +3,19 @@ import Link from "next/link";
 import NotVoted from "@/components/NotVoted";
 import Voted from "@/components/Voted";
 import { getVoteCounts } from "@/utils/CountVote";
+import Comissioner from "@/components/Comissioner";
 import { useEffect, useState } from "react";
+
+
+const colors = [
+  "bg-red-300",
+  "bg-green-300",
+  "bg-blue-300",
+  "bg-orange-500",
+  "bg-purple-300",
+  "bg-pink-300",
+];
+
 
 type VoteCounts = Record<string, Record<string, number>>;
 
@@ -30,13 +42,9 @@ export default function Home() {
 
   return (
     <section className="max-w-7xl mx-auto p-2">
-      <div className="bg-[#d96c06] p-4">
-        <h1 className="text-center text-3xl font-bold text-white">
-          Election 2025
-        </h1>
-      </div>
+      
 
-      <div className="my-12 p-2 bg-green-500 font-bold mx-auto text-white w-42 text-center rounded-full">
+      <div className="mt-14 p-2 bg-green-500 font-bold mx-auto text-white w-42 text-center rounded-full">
         <Link href="/vote">Give Your Vote</Link>
       </div>
 
@@ -45,8 +53,10 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-2">
-        {Object.entries(voteCounts ?? {}).map(([position, candidates]) => (
-          <div className="bg-indigo-300 p-3 rounded-md" key={position}>
+        {Object.entries(voteCounts ?? {}).map(([position, candidates],index) => {
+          const bgColor = colors[index % colors.length]; 
+          return (
+             <div className={`${bgColor} p-3 rounded-md`} key={position}>
             <h2 className="text-2xl font-bold text-center mb-2">
               {position
                 .replace(/([A-Z])/g, " $1")
@@ -66,10 +76,14 @@ export default function Home() {
               ))}
             </ul>
           </div>
-        ))}
+          )
+        })}
       </div>
 
-      <section>
+      <div>
+        <Comissioner/>
+      </div>
+      <section className="mt-18 flex flex-col lg:flex-row gap-10">
         <Voted />
         <NotVoted />
       </section>

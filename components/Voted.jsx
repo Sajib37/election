@@ -55,8 +55,8 @@ const Voted = () => {
   }
   
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">
+    <div className="max-w-4xl mx-auto p-3 bg-white/40 shadow-xl rounded-lg w-full">
+      <h2 className="text-2xl font-bold mb-4 text-center">
         ✅ Already Voted ({votedVoters.length})
       </h2>
 
@@ -67,16 +67,17 @@ const Voted = () => {
           {votedVoters.map((voter) => (
             <li
               key={voter.voterId}
-              className="p-3 border rounded flex justify-between items-center bg-green-50"
+              className="p-3 border rounded flex justify-between items-center bg-green-500/10 gap-4"
             >
-              <div>
+              <div className="flex flex-col">
                 <span className="font-semibold text-lg">{voter.name}</span>
-                <span className="ml-4 text-sm text-gray-600">
-                  ID: {voter.voterId}
+                <span className=" text-sm text-gray-600">
+                  Department: {voter.department}
+                  
                 </span>
               </div>
               <span className="text-sm font-medium text-green-700">
-                Department: {voter.department}
+                ID: {voter.voterId}
               </span>
             </li>
           ))}
