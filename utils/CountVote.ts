@@ -1,4 +1,5 @@
-// utils/voteCounter.ts
+"use client"
+
 export type Vote = {
   president: string;
   generalSecretary: string;
@@ -13,7 +14,7 @@ export type VoteCounts = Record<string, Record<string, number>>;
 
 export async function getVoteCounts(): Promise<VoteCounts> {
   // Fetch all votes
-  const allVotes: Vote[] = await fetch(`http://localhost:3000/api/votes/all`, {
+  const allVotes: Vote[] = await fetch(`/api/votes/all`, {
     cache: "no-store",
   }).then(res => res.json());
 

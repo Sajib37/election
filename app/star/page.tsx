@@ -1,3 +1,5 @@
+"use client"
+
 import VoteCard from "@/components/VoteCard";
 
 export interface IVoteRecord {
@@ -16,7 +18,7 @@ export interface IVoteRecord {
 
 const page = async () => {
   // Fetch all votes
-  const allVotes = await fetch(`http://localhost:3000/api/votes/all`, {
+  const allVotes = await fetch(`/api/votes/all`, {
     cache: "no-store",
   }).then((res) => res.json());
   const sortedVotes = allVotes.sort(
