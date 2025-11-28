@@ -1,11 +1,11 @@
 "use client";
 
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function VotingForm() {
-    const router = useRouter();
+  const router = useRouter();
   const [form, setForm] = useState({
     voterId: "",
     studentIdFile: null, // Holds the file object
@@ -83,7 +83,10 @@ export default function VotingForm() {
         setFileName("");
         setMessage("✅ Vote submitted successfully!");
         toast.success("✅ Vote submitted successfully!");
-        router.push("/");
+        // Delay redirect
+        setTimeout(() => {
+          router.push("/");
+        }, 1000);
       } else {
         // Checking the new structure: data.error
         toast.error("❌ " + data.error);
