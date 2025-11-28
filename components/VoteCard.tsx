@@ -27,7 +27,7 @@ const VoteCard = ({ vote }: { vote: IVoteRecord }) => {
 
       {/* Given Votes */}
       <div className="mt-5 bg-gray-50 p-4 rounded-lg ">
-        <h2 className="text-lg font-semibold text-gray-700 mb-2">
+        <h2 className="text-lg font-semibold text-purple-700 mb-2">
           Given Votes
         </h2>
 

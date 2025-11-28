@@ -1,8 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation"; 
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function VotingForm() {
+    const router = useRouter();
   const [form, setForm] = useState({
     voterId: "",
     studentIdFile: null, // Holds the file object
@@ -66,7 +69,6 @@ export default function VotingForm() {
 
       if (data.success) {
         // Checking the new structure: data.success
-        alert("✅ Vote submitted successfully!");
         // Clear form upon success
         setForm({
           voterId: "",
@@ -79,14 +81,17 @@ export default function VotingForm() {
           publicitySecretary: "",
         });
         setFileName("");
+        setMessage("✅ Vote submitted successfully!");
+        toast.success("✅ Vote submitted successfully!");
+        router.push("/");
       } else {
         // Checking the new structure: data.error
-        alert("❌ " + data.error);
+        toast.error("❌ " + data.error);
         setMessage(`❌ Error: ${data.error || "Submission failed."}`);
       }
     } catch (error) {
-      console.error("Submission error:", error);
-      alert("❌ An unexpected error occurred. Please check your network.");
+      toast.error("An unexpected error occurred. Please check your network.");
+      setMessage("❌ An unexpected error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -257,6 +262,7 @@ export default function VotingForm() {
           </button>
         </form>
       </div>
+      <Toaster position="top-right" reverseOrder={false} />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation"; // Import for redirection
+import toast, { Toaster } from "react-hot-toast";
 
 const CommissionerLogin = () => {
   const [userId, setUserId] = useState("");
@@ -22,11 +23,11 @@ const CommissionerLogin = () => {
         setIsSubmitting(false);
 
         if (userId === HARD_CODED_USER && password === HARD_CODED_PASS) {
-            // alert("Login Successful! Redirecting to Dashboard.");
-            // 🚀 Redirect to the dashboard page
+            toast.success("Login Successful! Redirecting to Dashboard.");
             router.push("/star"); 
         } else {
-            setError("Invalid User ID or Password");
+          setError("Invalid User ID or Password");
+          toast.error("Invalid User ID or Password");
         }
     }, 500); 
   };
@@ -98,6 +99,7 @@ const CommissionerLogin = () => {
           </button>
         </form>
       </div>
+      <Toaster position="top-right" reverseOrder={false} />
     </div>
   );
 };
