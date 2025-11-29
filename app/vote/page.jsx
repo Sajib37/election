@@ -102,8 +102,10 @@ export default function VotingForm() {
 
   return (
     <section>
-      <div className="max-w-2xl mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-6 text-center">Election 2025</h1>
+      <div className="max-w-2xl mx-auto p-6 bg-slate-100 my-4 mt-10">
+        <div className="w-full p-2 bg-indigo-700 mt-4 mb-6 rounded-lg text-white">
+          <h1 className="text-2xl font-bold  text-center ">Submit Your Vote</h1>
+        </div>
 
         {message && (
           <div
@@ -147,7 +149,9 @@ export default function VotingForm() {
               className="w-full border p-3 rounded file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
           </div>
-
+          <div className="bg-orange-600 p-1 rounded-lg">
+            <h2 className="text-xl font-bold text-center text-white">Choose your Candidates</h2>
+          </div>
           {/* PRESIDENT */}
           <div>
             <label className="block font-semibold mb-2">President *</label>

@@ -52,7 +52,7 @@ export default function Home() {
         <Link href="/login">Comissioner Login</Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-2">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-2">
         {Object.entries(voteCounts ?? {}).map(([position, candidates],index) => {
           const bgColor = colors[index % colors.length]; 
           return (
@@ -78,15 +78,16 @@ export default function Home() {
           </div>
           )
         })}
-      </div>
+      </div> */}
 
+      
+      <section className="mt-18 flex flex-col lg:flex-row gap-10">
+        <Voted />
+        <NotVoted />
+      </section>
       <div>
         <Comissioner/>
       </div>
-      {/* <section className="mt-18 flex flex-col lg:flex-row gap-10">
-        <Voted />
-        <NotVoted />
-      </section> */}
     </section>
   );
 }
