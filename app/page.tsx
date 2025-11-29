@@ -4,22 +4,26 @@ import NotVoted from "@/components/NotVoted";
 import Voted from "@/components/Voted";
 import Comissioner from "@/components/Comissioner";
 import LiveDashboard from "@/components/LiveDashboard";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
+  const handleVoting = () => {
+    toast.error("Voting time has officially ended")
+  }
 
 
   return (
     <section className="max-w-7xl mx-auto p-2">
       
-      <div className="mt-14 p-2 bg-green-500 font-bold mx-auto text-white w-42 text-center rounded-full">
-        <Link href="/vote">Give Your Vote</Link>
+      <div onClick={handleVoting} className="mt-14 p-2 bg-green-500 font-bold mx-auto text-white w-42 text-center rounded-full">
+        <Link href="">Give Your Vote</Link>
       </div>
 
       <div className="my-8 bg-blue-600 text-white mx-auto w-44 p-2 rounded-full text-center font-bold">
-        <Link href="/login">Comissioner Login</Link>
+        <Link  href="/login">Comissioner Login</Link>
       </div>
 
-      {/* <LiveDashboard/> */}
+      <LiveDashboard/>
 
       
       <section className="mt-18 flex flex-col lg:flex-row gap-10">
@@ -29,6 +33,8 @@ export default function Home() {
       <div>
         <Comissioner/>
       </div>
+
+      <Toaster/>
     </section>
   );
 }
