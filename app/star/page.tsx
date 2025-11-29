@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import VoteCard from "@/components/VoteCard";
+import LiveDashboard from "@/components/LiveDashboard";
 
 export interface IVoteRecord {
   voterId: number;
@@ -63,6 +64,9 @@ const Page = () => {
           ))}
         </div>
       </div>
+
+
+      <LiveDashboard/>
     </section>
   );
 };

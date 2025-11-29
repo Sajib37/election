@@ -49,6 +49,15 @@ const NotVoted = () => {
     );
   }
 
+  const groupedByBatch = notVotedVoters.reduce((acc, voter) => {
+    const batch = voter.voterId.toString().slice(2, 4); // extract batch from voterId
+
+    if (!acc[batch]) acc[batch] = [];
+    acc[batch].push(voter);
+
+    return acc;
+  }, {});
+
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white/40 shadow-xl rounded-lg w-full">
       <h2 className="text-2xl font-bold mb-4 text-center">
@@ -60,25 +69,39 @@ const NotVoted = () => {
           Great! All eligible voters have cast their vote.
         </p>
       ) : (
-        <ul className="space-y-3">
-          {notVotedVoters.map((voter) => (
-            <li
-              key={voter.voterId}
-              className="p-3 border rounded flex justify-between items-center bg-purple-500/10 gap-4"
-            >
-              <div className="flex flex-col">
-                <span className="font-semibold text-lg">{voter.name}</span>
-                <span className=" text-sm text-gray-600">
-                  
-                  Dept: {voter.department}
-                </span>
+        <>
+          {Object.keys(groupedByBatch)
+            .sort()
+            .map((batch) => (
+              <div key={batch} className="mb-8">
+                <h1 className="text-xl font-bold w-fit mb-2 mt-6 bg-red-500/90 p-2 text-white rounded-md">
+                  {batch}th Batch  Not Voted Yet
+                </h1>
+
+                <ul className="space-y-3">
+                  {groupedByBatch[batch].map((voter) => (
+                    <li
+                      key={voter.voterId}
+                      className="p-3 border rounded flex justify-between items-center bg-orange-500/15 gap-4"
+                    >
+                      <div>
+                        <span className="font-semibold text-lg">
+                          {voter.name}
+                        </span>
+                        <span className="text-sm text-gray-600 block">
+                          Department: {voter.department}
+                        </span>
+                      </div>
+
+                      <span className="text-sm font-medium text-green-700">
+                        ID: {voter.voterId}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <span className="text-sm font-medium text-yellow-700">
-                ID: {voter.voterId}
-              </span>
-            </li>
-          ))}
-        </ul>
+            ))}
+        </>
       )}
     </div>
   );
